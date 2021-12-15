@@ -146,7 +146,7 @@ g_object_unref (store);
 
 
 
-void modifier(Stock s)
+void ModifierProduit(Stock s)
 {
   Stock c;
   FILE*f;

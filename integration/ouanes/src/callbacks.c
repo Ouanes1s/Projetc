@@ -9,7 +9,7 @@
 #include "support.h"
 #include "fonctions.h"
 #include "fonction.c"
-#include "fonction.h"
+
 #include "login.c"
 int choix = 0 ;
 int p;
@@ -24,7 +24,7 @@ on_Super1_clicked                      (GtkButton       *button,
 GtkWidget *Login_bienvenue;
 Login_bienvenue=lookup_widget(button,"Login_bienvenue");
 Login_bienvenue=create_Login_bienvenue();
-gtk_widget_show(Gestion);
+gtk_widget_show(Login_bienvenue);
 }
 
 
@@ -886,7 +886,7 @@ on_button_AKmodif2_clicked             (GtkWidget       *objet_graphique,
   s.dateexp.mois = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(input6));
   s.dateexp.jour = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(input5));
   
-  modifier(s);
+  ModifierProduit(s);
   gtk_label_set_text(GTK_LABEL(output),c);
 
 

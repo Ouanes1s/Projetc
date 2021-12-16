@@ -7,7 +7,7 @@ int check_user(char inpt_login[], char inpt_mdp[],int n){
     int r = -1;
     FILE* f;
     char test_login[150]; char test_mdp[150];
-    f=fopen("/home/amine/Projets/projet5/src/users.txt","r");
+    f=fopen("users.txt","r");
     if (f!=NULL) {
       /* code */
       while(fscanf(f,"%s %s\n", test_login,test_mdp)!=EOF){

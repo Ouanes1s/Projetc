@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/ouanes/integration/ouanes'
+ac_pwd='/home/amine/Projets/Projetc/integration/ouanes'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -686,12 +686,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/ouanes/integration/ouanes/install-sh"
-S["MAKEINFO"]="${SHELL} /home/ouanes/integration/ouanes/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/ouanes/integration/ouanes/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/ouanes/integration/ouanes/missing automake-1.15"
-S["AUTOCONF"]="${SHELL} /home/ouanes/integration/ouanes/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/ouanes/integration/ouanes/missing aclocal-1.15"
+S["install_sh"]="${SHELL} /home/amine/Projets/Projetc/integration/ouanes/install-sh"
+S["MAKEINFO"]="${SHELL} /home/amine/Projets/Projetc/integration/ouanes/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/amine/Projets/Projetc/integration/ouanes/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /home/amine/Projets/Projetc/integration/ouanes/missing automake-1.15"
+S["AUTOCONF"]="${SHELL} /home/amine/Projets/Projetc/integration/ouanes/missing autoconf"
+S["ACLOCAL"]="${SHELL} /home/amine/Projets/Projetc/integration/ouanes/missing aclocal-1.15"
 S["VERSION"]="0.1"
 S["PACKAGE"]="projetf"
 S["CYGPATH_W"]="echo"

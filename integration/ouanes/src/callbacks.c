@@ -8,7 +8,7 @@
 #include "interface.h"
 #include "support.h"
 #include "fonctions.h"
-#include "fonction.c"
+#include "fonction.h"
 
 #include "login.c"
 int choix = 0 ;
@@ -623,7 +623,7 @@ on_button_AKajouter_clicked            (GtkWidget       *objet_graphique,
 {
 
 
-	Stock p;
+	Stock c;
 	GtkWidget *id,*nom,*quantite,*type,*jour, *mois, *annee, *ajouter ;
 	
 
@@ -640,17 +640,17 @@ on_button_AKajouter_clicked            (GtkWidget       *objet_graphique,
 
 
 	
-	strcpy(p.id,gtk_entry_get_text(GTK_ENTRY(id)));
-	strcpy(p.nom,gtk_entry_get_text(GTK_ENTRY(nom)));
-	strcpy(p.quantite,gtk_entry_get_text(GTK_ENTRY(quantite)));
-	strcpy(p.type,gtk_combo_box_get_active_text(GTK_COMBO_BOX(type)));
+	strcpy(c.id,gtk_entry_get_text(GTK_ENTRY(id)));
+	strcpy(c.nom,gtk_entry_get_text(GTK_ENTRY(nom)));
+	strcpy(c.quantite,gtk_entry_get_text(GTK_ENTRY(quantite)));
+	strcpy(c.type,gtk_combo_box_get_active_text(GTK_COMBO_BOX(type)));
 	
-	p.dateexp.annee = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(annee));
-	p.dateexp.mois = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(mois));
-	p.dateexp.jour = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(jour));
+	c.dateexp.annee = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(annee));
+	c.dateexp.mois = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(mois));
+	c.dateexp.jour = gtk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(jour));
 
 
-	AjouterProduit(p);
+	AjouterProduit(c);
 
 
 

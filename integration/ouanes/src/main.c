@@ -31,6 +31,7 @@ main (int argc, char *argv[])
   GtkWidget *Modification;
   GtkWidget *rupture;
   GtkWidget *confirmer_suppr;
+  GtkWidget *SuperAcceuil;
 
 #ifdef ENABLE_NLS
   bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -48,38 +49,9 @@ main (int argc, char *argv[])
    * (except popup menus), just so that you see something after building
    * the project. Delete any components that you don't want shown initially.
    */
-  Acceuil = create_Acceuil ();
-  gtk_widget_show (Acceuil);
-  Gestion = create_Gestion ();
-  gtk_widget_show (Gestion);
-  Ajouter = create_Ajouter ();
-  gtk_widget_show (Ajouter);
-  Modifier = create_Modifier ();
-  gtk_widget_show (Modifier);
-  Afficher = create_Afficher ();
-  gtk_widget_show (Afficher);
-  supprimer = create_supprimer ();
-  gtk_widget_show (supprimer);
-  Recherchetr = create_Recherchetr ();
-  gtk_widget_show (Recherchetr);
-  Dashboard2 = create_Dashboard2 ();
-  gtk_widget_show (Dashboard2);
-  Dashboard3 = create_Dashboard3 ();
-  gtk_widget_show (Dashboard3);
-  Login_gestionstock = create_Login_gestionstock ();
-  gtk_widget_show (Login_gestionstock);
-  Login_bienvenue = create_Login_bienvenue ();
-  gtk_widget_show (Login_bienvenue);
-  Ajout_produit = create_Ajout_produit ();
-  gtk_widget_show (Ajout_produit);
-  Stock = create_Stock ();
-  gtk_widget_show (Stock);
-  Modification = create_Modification ();
-  gtk_widget_show (Modification);
-  rupture = create_rupture ();
-  gtk_widget_show (rupture);
-  confirmer_suppr = create_confirmer_suppr ();
-  gtk_widget_show (confirmer_suppr);
+  SuperAcceuil = create_SuperAcceuil ();
+  gtk_widget_show (SuperAcceuil);
+
 
   gtk_main ();
   return 0;

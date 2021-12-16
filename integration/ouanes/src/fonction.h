@@ -7,7 +7,8 @@
 #include <stdio.h>
 
 
-typedef struct Date
+
+typedef struct 
 {
 
 	int jour;
